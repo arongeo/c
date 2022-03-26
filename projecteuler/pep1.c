@@ -15,7 +15,7 @@ unsigned int solve_pep1(int input) {
   }
   printf("%u\n", result);
   return 0;
-}
+}a
 
 int main() {
   return solve_pep1(read_input());
