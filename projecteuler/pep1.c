@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-unsigned int read_input() {
+unsigned int read_input(char* form_name) {
   int input;
+  printf("%s", form_name);
   scanf("%u", &input);
   return input;
 }
@@ -15,8 +16,8 @@ unsigned int solve_pep1(int input) {
   }
   printf("%u\n", result);
   return 0;
-}a
+}
 
 int main() {
-  return solve_pep1(read_input());
+  return solve_pep1(read_input("Iterations: "));
 }

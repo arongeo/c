@@ -9,6 +9,7 @@ unsigned int read_input() {
 int solve_pep3(unsigned int input) {
   unsigned int factors[100];
   unsigned int factors_multiplied;
+	int factors_length = 0;
   for (int a = 0; a<100; a++) {
    factors[a] = 1; 
   }
@@ -16,7 +17,6 @@ int solve_pep3(unsigned int input) {
     factors_multiplied = factors_multiplied * factors[i];
   }
   while (input != factors_multiplied) {
-    
   }
 }
 
